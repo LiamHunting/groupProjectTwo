@@ -46,8 +46,7 @@ export class swagLabsPage {
         await this.driver.findElement(this.passwordIpt).click();
         await this.driver.findElement(this.passwordIpt).clear();
         await this.driver.findElement(this.passwordIpt).sendKeys("secret_sauce");
-        await this.driver.findElement(this.loginBtn).click();
-        await this.driver.wait(until.elementLocated(this.menuBtn));
+        await this.driver.findElement(this.loginBtn).click();       
     };
     
 
